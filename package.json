@@ -6,7 +6,8 @@
     "watch_css": "gulp watch_css",
     "dev": "concurrently \"yarn watch_css\" \"next dev\"",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "export": "next export"
   },
   "dependencies": {
     "@apollo/react-hooks": "^3.1.5",
