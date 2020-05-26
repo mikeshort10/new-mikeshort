@@ -1,5 +1,9 @@
 @tailwind base;
 
+.home-pic {
+  background-image: url("./zion.jpeg");
+}
+
 @tailwind utilities;
 
 @tailwind components;
