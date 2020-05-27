@@ -5,9 +5,12 @@
   "scripts": {
     "watch_css": "gulp watch_css",
     "dev": "concurrently \"yarn watch_css\" \"yarn next\"",
-    "build": "next build",
     "start": "next start",
-    "export": "next export"
+    "export": "next export",
+    "start:lambda": "netlify-lambda serve lambda",
+    "build": "concurrently \"yarn build:app\" \"yarn build:lambda\"",
+    "build:app": "next build",
+    "build:lambda": "netlify-lambda build lambda"
   },
   "dependencies": {
     "@apollo/react-hooks": "^3.1.5",
@@ -36,6 +39,7 @@
     "eslint-plugin-react": "^7.20.0",
     "gulp": "^4.0.2",
     "gulp-postcss": "^8.0.0",
+    "netlify-lambda": "^1.6.3",
     "prettier": "^2.0.5",
     "tailwindcss": "^1.4.6",
     "typescript": "^3.9.2"
