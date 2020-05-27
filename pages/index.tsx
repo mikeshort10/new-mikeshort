@@ -1,10 +1,18 @@
 import React from "react";
 import { NextPage } from "next";
 import { Layout } from "../components/Layout";
+import axios from "axios";
 
 const P: React.FC = ({ children }) => <p className="py-2 px-3">{children}</p>;
 
 const Home: NextPage = () => {
+  if (typeof window !== "undefined") {
+    const { host, protocol } = window.location;
+    axios
+      .get(`${protocol}//${host}/.netlify/functions/hello`)
+      .then((res) => console.log(res.data))
+      .catch((err) => console.log(err));
+  }
   return (
     <Layout title="Mike Short">
       <div className="home-pic h-screen bg-cover bg-center bg-no-repeat relative">
