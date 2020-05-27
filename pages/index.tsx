@@ -12,8 +12,13 @@ const Home: NextPage = () => {
     const { host, protocol } = window.location;
     axios
       .get(`${protocol}//${host}/.netlify/functions/hello`)
-      .then((res) => console.log(res.data))
-      .catch((err) => console.log(err));
+      .then((res) => console.log("lambda", res.data))
+      .catch((err) => console.log("lambda", err));
+
+    axios
+      .get(`${protocol}//${host}/.netlify/functions/hello`)
+      .then((res) => console.log("api", res.data))
+      .catch((err) => console.log("api", err));
   }
   return (
     <Layout title="Mike Short">
