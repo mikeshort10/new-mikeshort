@@ -1,4 +1,4 @@
-import { ApolloServer } from "apollo-server-micro";
+import { ApolloServer } from "apollo-server-lambda";
 import { typeDefs, resolvers } from "../../graphql/index";
 import { NextApiRequest, NextApiResponse } from "next";
 
@@ -14,4 +14,5 @@ export const config = {
   },
 };
 
-export default apolloServer.createHandler({ path: "/api/graphql" });
+exports.handler = apolloServer.createHandler();
+exports.graphqlHandler = apolloServer.createHandler();
