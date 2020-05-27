@@ -3,7 +3,9 @@ import { NextPage } from "next";
 import { Layout } from "../components/Layout";
 import axios from "axios";
 
-const P: React.FC = ({ children }) => <p className="py-2 px-3">{children}</p>;
+const P: React.FC = ({ children }) => (
+  <p className="py-2 sm:px-3 max-w-5xl mx-auto">{children}</p>
+);
 
 const Home: NextPage = () => {
   if (typeof window !== "undefined") {
