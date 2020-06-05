@@ -1,4 +1,4 @@
-import { ApolloServer } from "apollo-server-lambda";
+import { ApolloServer } from "apollo-server-micro";
 import { typeDefs, resolvers } from "../../graphql/index";
 import { NextApiRequest, NextApiResponse } from "next";
 
@@ -13,6 +13,8 @@ export const config = {
     bodyParser: false,
   },
 };
+
+export default apolloServer.createHandler({ path: "/api/graphql" });
 
 exports.handler = apolloServer.createHandler();
 exports.graphqlHandler = apolloServer.createHandler();
