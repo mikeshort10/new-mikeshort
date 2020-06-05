@@ -13,7 +13,13 @@ export const Layout: React.FC<LayoutProps> = ({
     <>
       <Head>
         <title>{title}</title>
-        <meta name="description" content={description} />
+        <meta
+          name="description"
+          content={
+            description ||
+            "Full-stack developer with a lover for TypeScript, GraphQL, and functional programming."
+          }
+        />
       </Head>
       <Navbar />
       <main className="pt-16">{children}</main>

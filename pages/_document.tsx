@@ -15,7 +15,7 @@ class MyDocument extends Document {
 
   render() {
     return (
-      <Html style={{ scrollBehavior: "smooth" }}>
+      <Html style={{ scrollBehavior: "smooth" }} lang="en">
         <Head>
           <link rel="stylesheet" href="/tailwind.css" />
         </Head>
