@@ -1,7 +1,6 @@
 import React from "react";
 import { NextPage } from "next";
 import { Layout } from "../components/Layout";
-import axios from "axios";
 import { useQuery } from "@apollo/react-hooks";
 import { gql } from "apollo-server-lambda";
 
