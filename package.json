@@ -8,7 +8,7 @@
     "start": "next start",
     "export": "next export",
     "start:lambda": "netlify-lambda serve lambda",
-    "build": "concurrently \"yarn build:app\" \"yarn build:lambda\"",
+    "build": "yarn build:app",
     "build:app": "next build",
     "build:lambda": "netlify-lambda build lambda"
   },
