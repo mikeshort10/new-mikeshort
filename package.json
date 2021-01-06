@@ -8,7 +8,7 @@
     "start": "next start",
     "export": "next export",
     "start:lambda": "netlify-lambda serve lambda",
-    "build": "yarn build:app",
+    "build": "concurrently \"yarn build:app\" \"yarn build:lambda\"",
     "build:app": "next build",
     "build:lambda": "netlify-lambda build lambda"
   },
@@ -21,6 +21,7 @@
     "axios": "^0.21.1",
     "dotenv": "^8.2.0",
     "fp-ts": "^2.6.1",
+    "graphql-tag": "^2.11.0",
     "isomorphic-fetch": "^2.2.1",
     "next": "^10.0.3",
     "react": "16.13.1",
