@@ -19,7 +19,7 @@
     "apollo-link-http": "^1.5.17",
     "apollo-server-lambda": "^2.13.1",
     "apollo-server-micro": "^2.14.2",
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "dotenv": "^8.2.0",
     "fp-ts": "^2.6.1",
     "isomorphic-fetch": "^2.2.1",
