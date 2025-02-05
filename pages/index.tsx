@@ -1,8 +1,6 @@
 import React from "react";
 import { NextPage } from "next";
 import { Layout } from "../components/Layout";
-import { useQuery } from "@apollo/react-hooks";
-import gql from "graphql-tag";
 
 const P: React.FC = ({ children }) => (
   <p className="py-2 my-2 mx-auto text-gray-400">{children}</p>

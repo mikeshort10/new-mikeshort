@@ -11,9 +11,7 @@ export const Navbar: React.FC = () => {
         </div>
       </Link>
       <div>
-        <Link href="#about">
-          About
-        </Link>
+        <Link href="#about">About</Link>
       </div>
     </nav>
   );
