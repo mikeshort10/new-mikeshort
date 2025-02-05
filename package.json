@@ -7,10 +7,8 @@
     "dev": "concurrently \"yarn watch_css\" \"yarn next\"",
     "start": "next start",
     "export": "next export",
-    "start:lambda": "netlify-lambda serve lambda",
-    "build": "concurrently \"yarn build:app\" \"yarn build:lambda\"",
-    "build:app": "next build",
-    "build:lambda": "netlify-lambda build lambda"
+    "build": "next build",
+    "build:app": "next build"
   },
   "dependencies": {
     "next": "^13.5.0",
