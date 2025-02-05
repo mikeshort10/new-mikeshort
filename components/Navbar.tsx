@@ -12,7 +12,7 @@ export const Navbar: React.FC = () => {
       </Link>
       <div>
         <Link href="#about">
-          <a>About</a>
+          About
         </Link>
       </div>
     </nav>

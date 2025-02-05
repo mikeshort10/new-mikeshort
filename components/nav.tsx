@@ -15,7 +15,7 @@ const Nav: NextPage = () => (
     <ul>
       <li>
         <Link href="/">
-          <a>Home</a>
+          Home
         </Link>
       </li>
       {links.map(({ key, href, label }) => (
